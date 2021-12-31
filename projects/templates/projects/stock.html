@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<h3>TD Ameritrade API</h3>
+
+<p>A project to mess around with the TD Ameritrade API and retrieve stock information.</p>
+<p>Also, working with Post and Get methods and JSON data in Django.</p>
+
+<form action="{% url 'price' %}">
+
+    Enter stock ticker: <input type="text" name="stock"><br>
+    <p>ex. TSLA, MSFT, AAPL</p>
+    <input type="submit">
+
+</form>
+
+{% endblock content %}

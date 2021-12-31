@@ -1,0 +1,38 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<h3>TD Ameritrade API</h3>
+
+<p>A project to mess around with the TD Ameritrade API and retrieve stock information.</p>
+<p>Also, working with Post and Get methods and JSON data in Django.</p>
+
+<form action="{% url 'price' %}">
+
+    Enter stock ticker: <input type="text" name="stock"><br>
+    <p>ex. TSLA, MSFT, AAPL</p>
+    <input type="submit">
+
+</form>
+<br>
+
+
+<ul>
+    <li>Symbol: {{symbol}}</li>
+    <li>Description : {{description}}</li>
+    <li>Bid Price : {{bidPrice}}</li>
+    <li>Ask Price : {{askPrice}}</li>
+    <li>Last Price : {{lastPrice}}</li>
+    <li>Open Price : {{openPrice}}</li>
+    <li>High Price : {{highPrice}}</li>
+    <li>Low Price : {{lowPrice}}</li>
+    <li>Close Price : {{closePrice}}</li>
+    <li>Total Volume : {{totalVolume}}</li>
+    <li>52 Week High : {{fiftyTwoWkHigh}}</li>
+    <li>52 Week Low : {{fiftyTwoWkLow}}</li>
+    <li>Price to Earnings Ratio : {{peRatio}}</li>
+    <li>Dividend Amount : {{divAmount}}</li>
+    <li>Dividend Yield : {{divYield}}</li>
+    <li>Dividend Data : {{divDate}}</li>
+</ul>
+
+{% endblock content %}
