@@ -85,7 +85,7 @@ def price(request):
     })
 
 
-def terrainapp(request):
+""" def terrainapp(request):
 
     latitude = float(request.GET.get('lat', None))
     longitude = float(request.GET.get('lon', None))
@@ -116,4 +116,4 @@ def terrainapp(request):
 
     # return render(request, 'projects/terrainapp.html', {'heights': heights})
 
-    return JsonResponse({"heights":heights}, status = 200)
+    return JsonResponse({"heights":heights}, status = 200) """

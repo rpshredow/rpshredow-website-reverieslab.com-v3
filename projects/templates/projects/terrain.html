@@ -6,21 +6,8 @@
             <div>
                 <h3>3D Terrain using Three.js</h3>
 
-                <form action="{% url '3DTerrain' %}">
-
-                    Enter Longitude: <input type="text" name="longitude"><br>
-                    Enter Latitude: <input type="text" name="latitude"><br>
-                    Enter Zoom: <input type="text" name="zoom"><br>
-                    <input type="submit">
-
-                </form>
-                
-                <div id="container">
-                    <p>Some examples: Mt Elbert, Colorado Latitude: 39.1178 Longitude: 106.4452 Zoom: 12</p> 
-                </div>
-
-                <!-- <p>Use tab to enter the input boxes and use ctrl-v to paste latitude, longitude, and zoom. The latitude and longitude 
-                    of Mt Elbert is 39.1178 and 106.4452 and the best zooms are between 10 and 15.</p> -->
+                <p>Use tab to enter the input boxes and use ctrl-v to paste latitude, longitude, and zoom. The latitude and longitude 
+                    of Mt Elbert is 39.1178 and 106.4452 and the best zooms are between 10 and 15.</p>
                 <p>This project was to turn a AWS public dataset for terrain heights into 3D representation using a WebGL wrapper 
                     called Three.js. Three.js makes using WebGL easier to use. The terrain data is represented in .png images whose 
                     dimensions are 256x256 where terrain heights are decoded from the RGB values.</p>

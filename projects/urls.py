@@ -8,5 +8,5 @@ urlpatterns = [
     path('fpgann/', views.fpgann, name='projects-fpgann'),
     path('stock/', views.stock, name='projects-stock'),
     path('price/', views.price, name='price'),
-    path('terrainapp/', views.terrainapp, name='terrainapp'),
+    #path('terrainapp/', views.terrainapp, name='terrainapp'),
 ]
